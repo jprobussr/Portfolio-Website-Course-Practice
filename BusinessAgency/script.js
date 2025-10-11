@@ -34,6 +34,23 @@ video.addEventListener('timeupdate', () => {
 
   if (video.ended) {
     btn.className = 'far fa-play-circle';
-    video.style.opacity = '0.3'
+    video.style.opacity = '0.3';
   }
+});
+
+// Section-3 pricing cards
+
+var swiper = new Swiper('.mySwiper', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 70,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+
 });
